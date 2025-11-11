@@ -1,10 +1,3 @@
-Absolutely, Besto 💪 — here’s your beautiful, complete, and professional README.md file for your AI Fitness Coach app, built using React, Tailwind CSS, Node.js, Amazon AWS, and Amazon RDS.
-
-You can copy-paste this directly into your project root as README.md — it’s styled for GitHub with badges, structure, and aesthetic clarity 👇
-
-
----
-
 # 🧠 AI FITNESS COACH
 
 ### 🚀 Developed by [DevManoj19](https://github.com/DevManoj19)
@@ -70,6 +63,7 @@ AI Fitness Coach merges these proven approaches into a cohesive application, off
 - `components.json` — Component data configuration.
 
 ---
+###Application: [Open Application](https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/660d6433357552359deb608996e13ea1/55dd4a14-2e67-4596-9709-c595c8c8ab5e/index.html?utm_source=perplexity)
 
 ## 📊 RESULT ANALYSIS AND VALIDATION
 
@@ -141,6 +135,8 @@ npm run dev
 # Build for production
 npm run build
 
+```
+
 🌐 Environment Variables
 
 Create a .env file:
@@ -172,7 +168,6 @@ JWT_SECRET=your-secret-key
      
 
 
----
 
 📬 CONTACT
 
@@ -182,16 +177,6 @@ JWT_SECRET=your-secret-key
 📄 License: MIT License
 
 
----
 
 > 💬 "Fitness is not about being better than someone else — it's about being better than you used to be."
 — AI Fitness Coach
-
-
-
----
-
-Would you like me to:
-1. **Add your real AWS live demo link and screenshot placeholders**,  
-or  
-2. **Generate a clean PDF version** of this README for journal/report submission?
