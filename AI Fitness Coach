@@ -1,0 +1,1095 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/660d6433357552359deb608996e13ea1/55dd4a14-2e67-4596-9709-c595c8c8ab5e/index.html?utm_source=perplexity
+Subject: AI Fitness Coach
+Date: Sun, 7 Sep 2025 00:54:23 +0530
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--lEsZoNZak57Tz3Y0vz1S4Zw5tIutTdiPpjFVNTBBpT----"
+
+
+------MultipartBoundary--lEsZoNZak57Tz3Y0vz1S4Zw5tIutTdiPpjFVNTBBpT----
+Content-Type: text/html
+Content-ID: <frame-3452C43D600AFC945A61D6B67FF5DB21@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/660d6433357552359deb608996e13ea1/55dd4a14-2e67-4596-9709-c595c8c8ab5e/index.html?utm_source=perplexity
+
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Coach</title>
+    <link rel="stylesheet" href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/660d6433357552359deb608996e13ea1/55dd4a14-2e67-4596-9709-c595c8c8ab5e/style.css">
+    
+</head>
+<body data-color-scheme="light">
+    <!-- Welcome/Onboarding Screen -->
+    <div id="welcomeScreen" class="screen active">
+        <div class="welcome-container">
+            <div class="welcome-content">
+                <h1>🏋️ AI Fitness Coach</h1>
+                <p>Your personalized fitness journey starts here. Get AI-powered workouts, nutrition guidance, and continuous support.</p>
+                <button class="btn btn--primary btn--lg">Get Started</button>
+                <button class="btn btn--outline btn--lg">Already have an account?</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Onboarding Screen -->
+    <div id="onboardingScreen" class="screen">
+        <div class="onboarding-container">
+            <div class="onboarding-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="onboardingProgress"></div>
+                </div>
+                <span class="progress-text">Step <span id="currentStep">1</span> of 5</span>
+            </div>
+
+            <div class="onboarding-step active" id="step1">
+                <h2>Tell us about yourself</h2>
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" id="userName" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Age</label>
+                    <input type="number" class="form-control" id="userAge" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Gender</label>
+                    <select class="form-control" id="userGender">
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="onboarding-step" id="step2">
+                <h2>What's your fitness goal?</h2>
+                <div class="goal-options">
+                    <div class="goal-card" data-goal="weight-loss">
+                        <div class="goal-icon">⚖️</div>
+                        <h3>Weight Loss</h3>
+                        <p>Burn calories and lose weight</p>
+                    </div>
+                    <div class="goal-card" data-goal="muscle-gain">
+                        <div class="goal-icon">💪</div>
+                        <h3>Muscle Gain</h3>
+                        <p>Build strength and muscle mass</p>
+                    </div>
+                    <div class="goal-card" data-goal="endurance">
+                        <div class="goal-icon">🏃</div>
+                        <h3>Endurance</h3>
+                        <p>Improve cardiovascular fitness</p>
+                    </div>
+                    <div class="goal-card" data-goal="general">
+                        <div class="goal-icon">🎯</div>
+                        <h3>General Fitness</h3>
+                        <p>Overall health and wellness</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="onboarding-step" id="step3">
+                <h2>What's your experience level?</h2>
+                <div class="level-options">
+                    <div class="level-card" data-level="beginner">
+                        <h3>Beginner</h3>
+                        <p>New to exercise or returning after a break</p>
+                    </div>
+                    <div class="level-card" data-level="intermediate">
+                        <h3>Intermediate</h3>
+                        <p>Regular exercise, comfortable with basic movements</p>
+                    </div>
+                    <div class="level-card" data-level="advanced">
+                        <h3>Advanced</h3>
+                        <p>Experienced with various exercises and techniques</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="onboarding-step" id="step4">
+                <h2>Equipment available</h2>
+                <div class="equipment-options">
+                    <div class="equipment-card" data-equipment="bodyweight">
+                        <div class="equipment-icon">🤸</div>
+                        <h3>Bodyweight Only</h3>
+                    </div>
+                    <div class="equipment-card" data-equipment="basic">
+                        <div class="equipment-icon">🏋️</div>
+                        <h3>Basic Equipment</h3>
+                        <p>Dumbbells, resistance bands</p>
+                    </div>
+                    <div class="equipment-card" data-equipment="gym">
+                        <div class="equipment-icon">🏢</div>
+                        <h3>Full Gym</h3>
+                        <p>Complete gym access</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="onboarding-step" id="step5">
+                <h2>Initial measurements</h2>
+                <div class="measurements-grid">
+                    <div class="form-group">
+                        <label class="form-label">Current Weight (kg)</label>
+                        <input type="number" class="form-control" id="currentWeight" placeholder="70">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Height (cm)</label>
+                        <input type="number" class="form-control" id="height" placeholder="170">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Target Weight (kg)</label>
+                        <input type="number" class="form-control" id="targetWeight" placeholder="65">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Workout Days per Week</label>
+                        <select class="form-control" id="workoutDays">
+                            <option value="3">3 days</option>
+                            <option value="4">4 days</option>
+                            <option value="5">5 days</option>
+                            <option value="6">6 days</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="onboarding-actions">
+                <button class="btn btn--secondary" id="prevBtn" style="display: none;">Previous</button>
+                <button class="btn btn--primary" id="nextBtn">Next</button>
+                <button class="btn btn--primary" id="finishBtn" style="display: none;">Complete Setup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main App Screen -->
+    <div id="mainApp" class="screen">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="app-title">AI Fitness Coach</h1>
+                    <span class="user-greeting">Hello, <span id="userGreeting">Champion</span>! 👋</span>
+                </div>
+                <div class="header-right">
+                    <button class="btn btn--secondary btn--sm">🌓</button>
+                    <button class="btn btn--secondary btn--sm">⚙️</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Section -->
+            <section id="dashboardSection" class="app-section active">
+                <div class="dashboard-grid">
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-icon">🔥</div>
+                            <div class="stat-content">
+                                <h3 id="totalWorkouts">0</h3>
+                                <p>Total Workouts</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⏱️</div>
+                            <div class="stat-content">
+                                <h3 id="totalMinutes">0</h3>
+                                <p>Minutes Exercised</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-content">
+                                <h3 id="currentStreak">0</h3>
+                                <p>Day Streak</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-content">
+                                <h3 id="achievementCount">0</h3>
+                                <p>Achievements</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-content">
+                        <div class="dashboard-left">
+                            <div class="card">
+                                <div class="card__header">
+                                    <h3>Today's Recommendation</h3>
+                                </div>
+                                <div class="card__body">
+                                    <div class="recommendation" id="todayRecommendation">
+                                        <div class="rec-icon">💪</div>
+                                        <div class="rec-content">
+                                            <h4>Upper Body Strength</h4>
+                                            <p>Perfect day for building upper body strength. Ready to crush it?</p>
+                                            <button class="btn btn--primary btn--sm">Start Workout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__header">
+                                    <h3>Recent Achievements</h3>
+                                </div>
+                                <div class="card__body">
+                                    <div class="achievements-list" id="recentAchievements">
+                                        <!-- Achievements will be populated by JS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-right">
+                            <div class="card">
+                                <div class="card__header">
+                                    <h3>Weekly Progress</h3>
+                                </div>
+                                <div class="card__body">
+                                    <div class="chart-container" style="position: relative; height: 250px;">
+                                        <canvas id="weeklyChart" height="687" style="display: block; box-sizing: border-box; height: 250px; width: 327px;" width="900"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workouts Section -->
+            <section id="workoutsSection" class="app-section">
+                <div class="section-header">
+                    <h2>Workouts</h2>
+                    <button class="btn btn--primary">Generate New Workout</button>
+                </div>
+
+                <div class="workout-content">
+                    <div class="workout-filters">
+                        <select class="form-control" id="workoutCategory">
+                            <option value="">All Categories</option>
+                            <option value="Upper Body">Upper Body</option>
+                            <option value="Lower Body">Lower Body</option>
+                            <option value="Full Body">Full Body</option>
+                            <option value="Core">Core</option>
+                        </select>
+                        <select class="form-control" id="workoutDifficulty">
+                            <option value="">All Levels</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="exercises-grid" id="exercisesGrid">
+                        <!-- Exercises will be populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Workout Timer Modal -->
+                <div class="modal hidden" id="workoutModal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 id="currentExerciseName">Exercise</h3>
+                            <button class="btn btn--secondary btn--sm">✕</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="exercise-demo">
+                                <div class="exercise-info">
+                                    <p><strong>Target Muscles:</strong> <span id="exerciseMuscles"></span></p>
+                                    <p><strong>Instructions:</strong></p>
+                                    <ol id="exerciseInstructions"></ol>
+                                    <p class="exercise-tip" id="exerciseTip"></p>
+                                </div>
+                            </div>
+                            
+                            <div class="workout-timer">
+                                <div class="timer-display">
+                                    <span id="timerDisplay">00:30</span>
+                                </div>
+                                <div class="timer-controls">
+                                    <button class="btn btn--primary" id="startPauseBtn">Start</button>
+                                    <button class="btn btn--secondary">Reset</button>
+                                    <button class="btn btn--outline">Skip</button>
+                                </div>
+                            </div>
+
+                            <div class="workout-progress">
+                                <p>Exercise <span id="exerciseNumber">1</span> of <span id="totalExercises">5</span></p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="workoutProgressFill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nutrition Section -->
+            <section id="nutritionSection" class="app-section">
+                <div class="section-header">
+                    <h2>Nutrition</h2>
+                    <button class="btn btn--primary">Generate Meal Plan</button>
+                </div>
+
+                <div class="nutrition-dashboard">
+                    <div class="nutrition-stats">
+                        <div class="nutrition-card">
+                            <h4>Daily Calories</h4>
+                            <div class="calorie-progress">
+                                <div class="calorie-circle">
+                                    <span id="caloriesConsumed">1200</span> / <span id="caloriesTarget">2000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nutrition-card">
+                            <h4>Macronutrients</h4>
+                            <div class="macro-bars">
+                                <div class="macro-bar">
+                                    <span>Protein</span>
+                                    <div class="bar"><div class="fill" style="width: 75%"></div></div>
+                                    <span>75g</span>
+                                </div>
+                                <div class="macro-bar">
+                                    <span>Carbs</span>
+                                    <div class="bar"><div class="fill" style="width: 60%"></div></div>
+                                    <span>150g</span>
+                                </div>
+                                <div class="macro-bar">
+                                    <span>Fat</span>
+                                    <div class="bar"><div class="fill" style="width: 45%"></div></div>
+                                    <span>45g</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meals-section">
+                        <h3>Today's Meals</h3>
+                        <div class="meals-grid" id="mealsGrid">
+                            <!-- Meals will be populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Section -->
+            <section id="progressSection" class="app-section">
+                <div class="section-header">
+                    <h2>Progress Tracking</h2>
+                    <button class="btn btn--primary">Log Progress</button>
+                </div>
+
+                <div class="progress-dashboard">
+                    <div class="progress-charts">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Weight Progress</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="chart-container" style="position: relative; height: 300px;">
+                                    <canvas id="weightChart" width="900" height="825" style="display: block; box-sizing: border-box; height: 300px; width: 327px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Workout Frequency</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="chart-container" style="position: relative; height: 300px;">
+                                    <canvas id="frequencyChart" width="900" height="825" style="display: block; box-sizing: border-box; height: 300px; width: 327px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-summary">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Key Metrics</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="metrics-grid">
+                                    <div class="metric">
+                                        <span class="metric-label">Current Weight</span>
+                                        <span class="metric-value" id="currentWeightDisplay">70 kg</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Weight Goal</span>
+                                        <span class="metric-value" id="targetWeightDisplay">65 kg</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Progress</span>
+                                        <span class="metric-value" id="weightProgress">-2 kg</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">BMI</span>
+                                        <span class="metric-value" id="bmiDisplay">24.2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Coach Section -->
+            <section id="coachSection" class="app-section">
+                <div class="section-header">
+                    <h2>AI Coach</h2>
+                    <div class="coach-status">
+                        <div class="status-indicator online"></div>
+                        <span>Coach Alex is online</span>
+                    </div>
+                </div>
+
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message coach-message">
+                            <div class="message-avatar">🤖</div>
+                            <div class="message-content">
+                                <p>Hello! I'm your AI fitness coach. I'm here to help you achieve your fitness goals. What would you like to know?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <button class="quick-action-btn">💪 Workout Tips</button>
+                        <button class="quick-action-btn">🥗 Nutrition Advice</button>
+                        <button class="quick-action-btn">🔥 Motivation</button>
+                        <button class="quick-action-btn">📊 Progress Review</button>
+                    </div>
+
+                    <div class="chat-input">
+                        <input type="text" class="form-control" id="chatInput" placeholder="Ask me anything about fitness...">
+                        <button class="btn btn--primary">Send</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" data-section="dashboard">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Dashboard</span>
+            </button>
+            <button class="nav-item" data-section="workouts">
+                <span class="nav-icon">💪</span>
+                <span class="nav-label">Workouts</span>
+            </button>
+            <button class="nav-item" data-section="nutrition">
+                <span class="nav-icon">🥗</span>
+                <span class="nav-label">Nutrition</span>
+            </button>
+            <button class="nav-item" data-section="progress">
+                <span class="nav-icon">📊</span>
+                <span class="nav-label">Progress</span>
+            </button>
+            <button class="nav-item" data-section="coach">
+                <span class="nav-icon">🤖</span>
+                <span class="nav-label">Coach</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal hidden" id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Settings</h3>
+                <button class="btn btn--secondary btn--sm">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h4>Profile</h4>
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" id="settingsName">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Current Weight (kg)</label>
+                        <input type="number" class="form-control" id="settingsWeight">
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h4>Preferences</h4>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" id="notificationsEnabled"> Enable Notifications
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" id="darkModeEnabled"> Dark Mode
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings-actions">
+                    <button class="btn btn--primary">Save Changes</button>
+                    <button class="btn btn--outline">Export Data</button>
+                    <button class="btn btn--secondary">Reset All Data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Log Modal -->
+    <div class="modal hidden" id="progressModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Log Progress</h3>
+                <button class="btn btn--secondary btn--sm">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Current Weight (kg)</label>
+                    <input type="number" class="form-control" id="progressWeight" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Body Fat % (optional)</label>
+                    <input type="number" class="form-control" id="progressBodyFat" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Energy Level (1-10)</label>
+                    <input type="range" class="form-control" id="progressEnergy" min="1" max="10" value="5">
+                    <span id="energyValue">5</span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Notes</label>
+                    <textarea class="form-control" id="progressNotes" rows="3" placeholder="How are you feeling today?"></textarea>
+                </div>
+                <button class="btn btn--primary btn--full-width">Save Progress</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body></html>
+------MultipartBoundary--lEsZoNZak57Tz3Y0vz1S4Zw5tIutTdiPpjFVNTBBpT----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/660d6433357552359deb608996e13ea1/55dd4a14-2e67-4596-9709-c595c8c8ab5e/style.css
+
+@charset "utf-8";
+
+:root { --color-white: rgba(255, 255, 255, 1); --color-black: rgba(0, 0, 0, 1); --color-cream-50: rgba(252, 252, 249, 1); --color-cream-100: rgba(255, 255, 253, 1); --color-gray-200: rgba(245, 245, 245, 1); --color-gray-300: rgba(167, 169, 169, 1); --color-gray-400: rgba(119, 124, 124, 1); --color-slate-500: rgba(98, 108, 113, 1); --color-brown-600: rgba(94, 82, 64, 1); --color-charcoal-700: rgba(31, 33, 33, 1); --color-charcoal-800: rgba(38, 40, 40, 1); --color-slate-900: rgba(19, 52, 59, 1); --color-teal-300: rgba(50, 184, 198, 1); --color-teal-400: rgba(45, 166, 178, 1); --color-teal-500: rgba(33, 128, 141, 1); --color-teal-600: rgba(29, 116, 128, 1); --color-teal-700: rgba(26, 104, 115, 1); --color-teal-800: rgba(41, 150, 161, 1); --color-red-400: rgba(255, 84, 89, 1); --color-red-500: rgba(192, 21, 47, 1); --color-orange-400: rgba(230, 129, 97, 1); --color-orange-500: rgba(168, 75, 47, 1); --color-brown-600-rgb: 94, 82, 64; --color-teal-500-rgb: 33, 128, 141; --color-slate-900-rgb: 19, 52, 59; --color-slate-500-rgb: 98, 108, 113; --color-red-500-rgb: 192, 21, 47; --color-red-400-rgb: 255, 84, 89; --color-orange-500-rgb: 168, 75, 47; --color-orange-400-rgb: 230, 129, 97; --color-bg-1: rgba(59, 130, 246, 0.08); --color-bg-2: rgba(245, 158, 11, 0.08); --color-bg-3: rgba(34, 197, 94, 0.08); --color-bg-4: rgba(239, 68, 68, 0.08); --color-bg-5: rgba(147, 51, 234, 0.08); --color-bg-6: rgba(249, 115, 22, 0.08); --color-bg-7: rgba(236, 72, 153, 0.08); --color-bg-8: rgba(6, 182, 212, 0.08); --color-background: var(--color-cream-50); --color-surface: var(--color-cream-100); --color-text: var(--color-slate-900); --color-text-secondary: var(--color-slate-500); --color-primary: var(--color-teal-500); --color-primary-hover: var(--color-teal-600); --color-primary-active: var(--color-teal-700); --color-secondary: rgba(var(--color-brown-600-rgb), 0.12); --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2); --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25); --color-border: rgba(var(--color-brown-600-rgb), 0.2); --color-btn-primary-text: var(--color-cream-50); --color-card-border: rgba(var(--color-brown-600-rgb), 0.12); --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12); --color-error: var(--color-red-500); --color-success: var(--color-teal-500); --color-warning: var(--color-orange-500); --color-info: var(--color-slate-500); --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4); --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8); --focus-ring: 0 0 0 3px var(--color-focus-ring); --focus-outline: 2px solid var(--color-primary); --status-bg-opacity: 0.15; --status-border-opacity: 0.25; --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); --color-success-rgb: 33, 128, 141; --color-error-rgb: 192, 21, 47; --color-warning-rgb: 168, 75, 47; --color-info-rgb: 98, 108, 113; --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace; --font-size-xs: 11px; --font-size-sm: 12px; --font-size-base: 14px; --font-size-md: 14px; --font-size-lg: 16px; --font-size-xl: 18px; --font-size-2xl: 20px; --font-size-3xl: 24px; --font-size-4xl: 30px; --font-weight-normal: 400; --font-weight-medium: 500; --font-weight-semibold: 550; --font-weight-bold: 600; --line-height-tight: 1.2; --line-height-normal: 1.5; --letter-spacing-tight: -0.01em; --space-0: 0; --space-1: 1px; --space-2: 2px; --space-4: 4px; --space-6: 6px; --space-8: 8px; --space-10: 10px; --space-12: 12px; --space-16: 16px; --space-20: 20px; --space-24: 24px; --space-32: 32px; --radius-sm: 6px; --radius-base: 8px; --radius-md: 10px; --radius-lg: 12px; --radius-full: 9999px; --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02); --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02); --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02); --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
+    0 4px 6px -2px rgba(0, 0, 0, 0.02); --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.03); --duration-fast: 150ms; --duration-normal: 250ms; --ease-standard: cubic-bezier(0.16, 1, 0.3, 1); --container-sm: 640px; --container-md: 768px; --container-lg: 1024px; --container-xl: 1280px; }
+
+@media (prefers-color-scheme: dark) {
+  :root { --color-gray-400-rgb: 119, 124, 124; --color-teal-300-rgb: 50, 184, 198; --color-gray-300-rgb: 167, 169, 169; --color-gray-200-rgb: 245, 245, 245; --color-bg-1: rgba(29, 78, 216, 0.15); --color-bg-2: rgba(180, 83, 9, 0.15); --color-bg-3: rgba(21, 128, 61, 0.15); --color-bg-4: rgba(185, 28, 28, 0.15); --color-bg-5: rgba(107, 33, 168, 0.15); --color-bg-6: rgba(194, 65, 12, 0.15); --color-bg-7: rgba(190, 24, 93, 0.15); --color-bg-8: rgba(8, 145, 178, 0.15); --color-background: var(--color-charcoal-700); --color-surface: var(--color-charcoal-800); --color-text: var(--color-gray-200); --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7); --color-primary: var(--color-teal-300); --color-primary-hover: var(--color-teal-400); --color-primary-active: var(--color-teal-800); --color-secondary: rgba(var(--color-gray-400-rgb), 0.15); --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25); --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3); --color-border: rgba(var(--color-gray-400-rgb), 0.3); --color-error: var(--color-red-400); --color-success: var(--color-teal-300); --color-warning: var(--color-orange-400); --color-info: var(--color-gray-300); --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4); --color-btn-primary-text: var(--color-slate-900); --color-card-border: rgba(var(--color-gray-400-rgb), 0.2); --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15); --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15); --button-border-secondary: rgba(var(--color-gray-400-rgb), 0.2); --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2); --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8); --focus-ring: 0 0 0 3px var(--color-focus-ring); --focus-outline: 2px solid var(--color-primary); --status-bg-opacity: 0.15; --status-border-opacity: 0.25; --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); --color-success-rgb: var(--color-teal-300-rgb); --color-error-rgb: var(--color-red-400-rgb); --color-warning-rgb: var(--color-orange-400-rgb); --color-info-rgb: var(--color-gray-300-rgb); }
+}
+
+[data-color-scheme="dark"] { --color-gray-400-rgb: 119, 124, 124; --color-teal-300-rgb: 50, 184, 198; --color-gray-300-rgb: 167, 169, 169; --color-gray-200-rgb: 245, 245, 245; --color-bg-1: rgba(29, 78, 216, 0.15); --color-bg-2: rgba(180, 83, 9, 0.15); --color-bg-3: rgba(21, 128, 61, 0.15); --color-bg-4: rgba(185, 28, 28, 0.15); --color-bg-5: rgba(107, 33, 168, 0.15); --color-bg-6: rgba(194, 65, 12, 0.15); --color-bg-7: rgba(190, 24, 93, 0.15); --color-bg-8: rgba(8, 145, 178, 0.15); --color-background: var(--color-charcoal-700); --color-surface: var(--color-charcoal-800); --color-text: var(--color-gray-200); --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7); --color-primary: var(--color-teal-300); --color-primary-hover: var(--color-teal-400); --color-primary-active: var(--color-teal-800); --color-secondary: rgba(var(--color-gray-400-rgb), 0.15); --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25); --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3); --color-border: rgba(var(--color-gray-400-rgb), 0.3); --color-error: var(--color-red-400); --color-success: var(--color-teal-300); --color-warning: var(--color-orange-400); --color-info: var(--color-gray-300); --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4); --color-btn-primary-text: var(--color-slate-900); --color-card-border: rgba(var(--color-gray-400-rgb), 0.15); --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15); --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15); --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2); --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8); --focus-ring: 0 0 0 3px var(--color-focus-ring); --focus-outline: 2px solid var(--color-primary); --status-bg-opacity: 0.15; --status-border-opacity: 0.25; --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); --color-success-rgb: var(--color-teal-300-rgb); --color-error-rgb: var(--color-red-400-rgb); --color-warning-rgb: var(--color-orange-400-rgb); --color-info-rgb: var(--color-gray-300-rgb); }
+
+[data-color-scheme="light"] { --color-brown-600-rgb: 94, 82, 64; --color-teal-500-rgb: 33, 128, 141; --color-slate-900-rgb: 19, 52, 59; --color-background: var(--color-cream-50); --color-surface: var(--color-cream-100); --color-text: var(--color-slate-900); --color-text-secondary: var(--color-slate-500); --color-primary: var(--color-teal-500); --color-primary-hover: var(--color-teal-600); --color-primary-active: var(--color-teal-700); --color-secondary: rgba(var(--color-brown-600-rgb), 0.12); --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2); --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25); --color-border: rgba(var(--color-brown-600-rgb), 0.2); --color-btn-primary-text: var(--color-cream-50); --color-card-border: rgba(var(--color-brown-600-rgb), 0.12); --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12); --color-error: var(--color-red-500); --color-success: var(--color-teal-500); --color-warning: var(--color-orange-500); --color-info: var(--color-slate-500); --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4); --color-success-rgb: var(--color-teal-500-rgb); --color-error-rgb: var(--color-red-500-rgb); --color-warning-rgb: var(--color-orange-500-rgb); --color-info-rgb: var(--color-slate-500-rgb); }
+
+html { font-size: var(--font-size-base); font-family: var(--font-family-base); line-height: var(--line-height-normal); color: var(--color-text); background-color: var(--color-background); -webkit-font-smoothing: antialiased; box-sizing: border-box; }
+
+body { margin: 0px; padding: 0px; }
+
+*, ::before, ::after { box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0px; font-weight: var(--font-weight-semibold); line-height: var(--line-height-tight); color: var(--color-text); letter-spacing: var(--letter-spacing-tight); }
+
+h1 { font-size: var(--font-size-4xl); }
+
+h2 { font-size: var(--font-size-3xl); }
+
+h3 { font-size: var(--font-size-2xl); }
+
+h4 { font-size: var(--font-size-xl); }
+
+h5 { font-size: var(--font-size-lg); }
+
+h6 { font-size: var(--font-size-md); }
+
+p { margin: 0 0 var(--space-16) 0; }
+
+a { color: var(--color-primary); text-decoration: none; transition: color var(--duration-fast) var(--ease-standard); }
+
+a:hover { color: var(--color-primary-hover); }
+
+code, pre { font-family: var(--font-family-mono); font-size: calc(var(--font-size-base) * 0.95); background-color: var(--color-secondary); border-radius: var(--radius-sm); }
+
+code { padding: var(--space-1) var(--space-4); }
+
+pre { padding: var(--space-16); margin: var(--space-16) 0; overflow: auto; border: 1px solid var(--color-border); }
+
+pre code { background: none; padding: 0px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: var(--space-8) var(--space-16); border-radius: var(--radius-base); font-size: var(--font-size-base); font-weight: 500; line-height: 1.5; cursor: pointer; transition: all var(--duration-normal) var(--ease-standard); border: none; text-decoration: none; position: relative; }
+
+.btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+.btn--primary { background: var(--color-primary); color: var(--color-btn-primary-text); }
+
+.btn--primary:hover { background: var(--color-primary-hover); }
+
+.btn--primary:active { background: var(--color-primary-active); }
+
+.btn--secondary { background: var(--color-secondary); color: var(--color-text); }
+
+.btn--secondary:hover { background: var(--color-secondary-hover); }
+
+.btn--secondary:active { background: var(--color-secondary-active); }
+
+.btn--outline { background: transparent; border: 1px solid var(--color-border); color: var(--color-text); }
+
+.btn--outline:hover { background: var(--color-secondary); }
+
+.btn--sm { padding: var(--space-4) var(--space-12); font-size: var(--font-size-sm); border-radius: var(--radius-sm); }
+
+.btn--lg { padding: var(--space-10) var(--space-20); font-size: var(--font-size-lg); border-radius: var(--radius-md); }
+
+.btn--full-width { width: 100%; }
+
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.form-control { display: block; width: 100%; padding: var(--space-8) var(--space-12); font-size: var(--font-size-md); line-height: 1.5; color: var(--color-text); background-color: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-base); transition: border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard); }
+
+textarea.form-control { font-family: var(--font-family-base); font-size: var(--font-size-base); }
+
+select.form-control { padding-top: ; padding-bottom: ; padding-left: ; appearance: none; background-image: var(--select-caret-light); background-repeat: no-repeat; background-position: right var(--space-12) center; background-size: 16px; padding-right: var(--space-32); }
+
+@media (prefers-color-scheme: dark) {
+  select.form-control { background-image: var(--select-caret-dark); }
+}
+
+[data-color-scheme="dark"] select.form-control { background-image: var(--select-caret-dark); }
+
+[data-color-scheme="light"] select.form-control { background-image: var(--select-caret-light); }
+
+.form-control:focus { border-color: var(--color-primary); outline: var(--focus-outline); }
+
+.form-label { display: block; margin-bottom: var(--space-8); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+
+.form-group { margin-bottom: var(--space-16); }
+
+.card { background-color: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-card-border); box-shadow: var(--shadow-sm); overflow: hidden; transition: box-shadow var(--duration-normal) var(--ease-standard); }
+
+.card:hover { box-shadow: var(--shadow-md); }
+
+.card__body { padding: var(--space-16); }
+
+.card__header, .card__footer { padding: var(--space-16); border-bottom: 1px solid var(--color-card-border-inner); }
+
+.status { display: inline-flex; align-items: center; padding: var(--space-6) var(--space-12); border-radius: var(--radius-full); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+
+.status--success { background-color: rgba(
+    var(--color-success-rgb, 33, 128, 141),
+    var(--status-bg-opacity)
+  ); color: var(--color-success); border: 1px solid
+    rgba(var(--color-success-rgb, 33, 128, 141), var(--status-border-opacity)); }
+
+.status--error { background-color: rgba(
+    var(--color-error-rgb, 192, 21, 47),
+    var(--status-bg-opacity)
+  ); color: var(--color-error); border: 1px solid
+    rgba(var(--color-error-rgb, 192, 21, 47), var(--status-border-opacity)); }
+
+.status--warning { background-color: rgba(
+    var(--color-warning-rgb, 168, 75, 47),
+    var(--status-bg-opacity)
+  ); color: var(--color-warning); border: 1px solid
+    rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity)); }
+
+.status--info { background-color: rgba(
+    var(--color-info-rgb, 98, 108, 113),
+    var(--status-bg-opacity)
+  ); color: var(--color-info); border: 1px solid
+    rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity)); }
+
+.container { width: 100%; margin-right: auto; margin-left: auto; padding-right: var(--space-16); padding-left: var(--space-16); }
+
+@media (min-width: 640px) {
+  .container { max-width: var(--container-sm); }
+}
+
+@media (min-width: 768px) {
+  .container { max-width: var(--container-md); }
+}
+
+@media (min-width: 1024px) {
+  .container { max-width: var(--container-lg); }
+}
+
+@media (min-width: 1280px) {
+  .container { max-width: var(--container-xl); }
+}
+
+.flex { display: flex; }
+
+.flex-col { flex-direction: column; }
+
+.items-center { align-items: center; }
+
+.justify-center { justify-content: center; }
+
+.justify-between { justify-content: space-between; }
+
+.gap-4 { gap: var(--space-4); }
+
+.gap-8 { gap: var(--space-8); }
+
+.gap-16 { gap: var(--space-16); }
+
+.m-0 { margin: 0px; }
+
+.mt-8 { margin-top: var(--space-8); }
+
+.mb-8 { margin-bottom: var(--space-8); }
+
+.mx-8 { margin-left: var(--space-8); margin-right: var(--space-8); }
+
+.my-8 { margin-top: var(--space-8); margin-bottom: var(--space-8); }
+
+.p-0 { padding: 0px; }
+
+.py-8 { padding-top: var(--space-8); padding-bottom: var(--space-8); }
+
+.px-8 { padding-left: var(--space-8); padding-right: var(--space-8); }
+
+.py-16 { padding-top: var(--space-16); padding-bottom: var(--space-16); }
+
+.px-16 { padding-left: var(--space-16); padding-right: var(--space-16); }
+
+.block { display: block; }
+
+.hidden { display: none; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px; }
+
+:focus-visible { outline: var(--focus-outline); outline-offset: 2px; }
+
+[data-color-scheme="dark"] .btn--outline { border: 1px solid var(--color-border-secondary); }
+
+@font-face { font-family: FKGroteskNeue; src: url("https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2") format("woff2"); }
+
+body { font-family: var(--font-family-base); margin: 0px; padding: 0px; background-color: var(--color-background); color: var(--color-text); overflow-x: hidden; }
+
+.screen { display: none; min-height: 100vh; }
+
+.screen.active { display: block; }
+
+.welcome-container { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: var(--space-32); background: linear-gradient(135deg, var(--color-bg-1), var(--color-bg-3)); }
+
+.welcome-content { text-align: center; max-width: 500px; }
+
+.welcome-content h1 { font-size: var(--font-size-4xl); margin-bottom: var(--space-24); background-image: ; background-position-x: ; background-position-y: ; background-size: ; background-repeat: ; background-attachment: ; background-origin: ; background-color: ; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.welcome-content p { font-size: var(--font-size-lg); margin-bottom: var(--space-32); color: var(--color-text-secondary); line-height: 1.6; }
+
+.welcome-content .btn { margin: var(--space-8); min-width: 200px; }
+
+.onboarding-container { max-width: 600px; margin: 0px auto; padding: var(--space-32) var(--space-16); min-height: 100vh; }
+
+.onboarding-progress { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-32); }
+
+.progress-bar { flex: 1 1 0%; height: 8px; background: var(--color-secondary); border-radius: var(--radius-full); margin-right: var(--space-16); overflow: hidden; }
+
+.progress-fill { height: 100%; background: var(--color-primary); width: 20%; transition: width var(--duration-normal) var(--ease-standard); }
+
+.progress-text { font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); color: var(--color-text-secondary); }
+
+.onboarding-step { display: none; animation: fadeIn var(--duration-normal) var(--ease-standard); }
+
+.onboarding-step.active { display: block; }
+
+.onboarding-step h2 { text-align: center; margin-bottom: var(--space-32); font-size: var(--font-size-3xl); }
+
+.goal-options, .level-options, .equipment-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-16); margin-bottom: var(--space-32); }
+
+.goal-card, .level-card, .equipment-card { background: var(--color-surface); border: 2px solid var(--color-card-border); border-radius: var(--radius-lg); padding: var(--space-24); text-align: center; cursor: pointer; transition: all var(--duration-fast) var(--ease-standard); }
+
+.goal-card:hover, .level-card:hover, .equipment-card:hover { border-color: var(--color-primary); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+.goal-card.selected, .level-card.selected, .equipment-card.selected { border-color: var(--color-primary); background: rgba(var(--color-teal-500-rgb), 0.1); }
+
+.goal-icon, .equipment-icon { font-size: 3rem; margin-bottom: var(--space-16); }
+
+.goal-card h3, .level-card h3, .equipment-card h3 { margin-bottom: var(--space-8); font-size: var(--font-size-xl); }
+
+.goal-card p, .level-card p, .equipment-card p { margin: 0px; color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+
+.measurements-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-16); margin-bottom: var(--space-32); }
+
+.onboarding-actions { display: flex; justify-content: space-between; margin-top: var(--space-32); }
+
+#mainApp { display: flex; flex-direction: column; min-height: 100vh; }
+
+.app-header { background: var(--color-surface); border-bottom: 1px solid var(--color-card-border); padding: var(--space-16) 0; position: sticky; top: 0px; z-index: 100; }
+
+.header-content { display: flex; justify-content: space-between; align-items: center; max-width: var(--container-xl); margin: 0px auto; padding: 0 var(--space-16); }
+
+.header-left .app-title { font-size: var(--font-size-2xl); margin-top: 0px; margin-right: 0px; margin-left: 0px; margin-bottom: var(--space-4); }
+
+.user-greeting { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+
+.header-right { display: flex; gap: var(--space-8); }
+
+.main-content { flex: 1 1 0%; max-width: var(--container-xl); margin: 0px auto; padding-top: ; padding-right: ; padding-left: ; width: 100%; padding-bottom: 100px; }
+
+.app-section { display: none; }
+
+.app-section.active { display: block; }
+
+.section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-32); }
+
+.section-header h2 { font-size: var(--font-size-3xl); margin: 0px; }
+
+.dashboard-grid { display: flex; flex-direction: column; gap: var(--space-32); }
+
+.stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-16); }
+
+.stat-card { background: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-card-border); padding: var(--space-20); display: flex; align-items: center; gap: var(--space-16); transition: all var(--duration-fast) var(--ease-standard); }
+
+.stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+.stat-icon { font-size: 2.5rem; background: var(--color-bg-1); padding: var(--space-12); border-radius: var(--radius-base); }
+
+.stat-content h3 { font-size: var(--font-size-3xl); margin: 0px; color: var(--color-primary); }
+
+.stat-content p { margin: 0px; font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+
+.dashboard-content { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-32); }
+
+.dashboard-left, .dashboard-right { display: flex; flex-direction: column; gap: var(--space-24); }
+
+.recommendation { display: flex; align-items: center; gap: var(--space-16); }
+
+.rec-icon { font-size: 3rem; background: var(--color-bg-2); padding: var(--space-16); border-radius: var(--radius-base); }
+
+.rec-content h4 { margin: 0 0 var(--space-8) 0; font-size: var(--font-size-xl); }
+
+.rec-content p { margin: 0 0 var(--space-16) 0; color: var(--color-text-secondary); }
+
+.achievements-list { display: flex; flex-direction: column; gap: var(--space-12); }
+
+.achievement-item { display: flex; align-items: center; gap: var(--space-12); padding: var(--space-12); background: var(--color-bg-3); border-radius: var(--radius-base); }
+
+.achievement-icon { font-size: 1.5rem; }
+
+.achievement-content h5 { margin: 0px; font-size: var(--font-size-base); }
+
+.achievement-content p { margin: 0px; font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+
+.workout-filters { display: flex; gap: var(--space-16); margin-bottom: var(--space-24); }
+
+.workout-filters select { min-width: 200px; }
+
+.exercises-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-20); }
+
+.exercise-card { background: var(--color-surface); border: 1px solid var(--color-card-border); border-radius: var(--radius-lg); padding: var(--space-20); transition: all var(--duration-fast) var(--ease-standard); cursor: pointer; }
+
+.exercise-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--color-primary); }
+
+.exercise-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-16); }
+
+.exercise-title { font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); margin: 0px; }
+
+.exercise-category { font-size: var(--font-size-xs); background: var(--color-bg-4); padding: var(--space-4) var(--space-8); border-radius: var(--radius-sm); color: var(--color-text); }
+
+.exercise-details { margin-bottom: var(--space-16); }
+
+.exercise-detail { display: flex; justify-content: space-between; margin-bottom: var(--space-4); font-size: var(--font-size-sm); }
+
+.exercise-muscles { color: var(--color-primary); font-size: var(--font-size-sm); margin-bottom: var(--space-8); }
+
+.exercise-tip { font-style: italic; color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-16); }
+
+.modal { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; z-index: 1000; padding: var(--space-16); }
+
+.modal.hidden { display: none; }
+
+.modal-content { background: var(--color-surface); border-radius: var(--radius-lg); max-width: 600px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: var(--shadow-lg); }
+
+.modal-header { display: flex; justify-content: space-between; align-items: center; padding: var(--space-20); border-bottom: 1px solid var(--color-card-border); }
+
+.modal-header h3 { margin: 0px; font-size: var(--font-size-2xl); }
+
+.modal-body { padding: var(--space-20); }
+
+.exercise-demo { margin-bottom: var(--space-24); }
+
+.exercise-info p { margin-bottom: var(--space-8); }
+
+.exercise-info ol { margin: var(--space-8) 0; padding-left: var(--space-20); }
+
+.exercise-info li { margin-bottom: var(--space-4); }
+
+.workout-timer { text-align: center; margin-bottom: var(--space-24); }
+
+.timer-display { font-size: 4rem; font-weight: var(--font-weight-bold); color: var(--color-primary); margin-bottom: var(--space-24); font-family: var(--font-family-mono); }
+
+.timer-controls { display: flex; justify-content: center; gap: var(--space-12); margin-bottom: var(--space-24); }
+
+.workout-progress { text-align: center; }
+
+.workout-progress p { margin-bottom: var(--space-8); font-weight: var(--font-weight-medium); }
+
+#workoutProgressFill { transition: width var(--duration-normal) var(--ease-standard); }
+
+.nutrition-dashboard { display: flex; flex-direction: column; gap: var(--space-32); }
+
+.nutrition-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-20); }
+
+.nutrition-card { background: var(--color-surface); border: 1px solid var(--color-card-border); border-radius: var(--radius-lg); padding: var(--space-20); }
+
+.nutrition-card h4 { margin: 0 0 var(--space-16) 0; font-size: var(--font-size-xl); }
+
+.calorie-circle { display: flex; align-items: center; justify-content: center; width: 120px; height: 120px; border: 8px solid var(--color-bg-1); border-radius: 50%; margin: 0px auto; font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); }
+
+.macro-bars { display: flex; flex-direction: column; gap: var(--space-12); }
+
+.macro-bar { display: flex; align-items: center; gap: var(--space-12); }
+
+.macro-bar span:first-child { min-width: 60px; font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); }
+
+.macro-bar .bar { flex: 1 1 0%; height: 8px; background: var(--color-secondary); border-radius: var(--radius-full); overflow: hidden; }
+
+.macro-bar .fill { height: 100%; background: var(--color-primary); transition: width var(--duration-normal) var(--ease-standard); }
+
+.macro-bar span:last-child { min-width: 40px; font-size: var(--font-size-sm); text-align: right; }
+
+.meals-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-20); }
+
+.meal-card { background: var(--color-surface); border: 1px solid var(--color-card-border); border-radius: var(--radius-lg); padding: var(--space-20); transition: all var(--duration-fast) var(--ease-standard); }
+
+.meal-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+.meal-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-16); }
+
+.meal-name { font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); margin: 0px; }
+
+.meal-category { font-size: var(--font-size-xs); background: var(--color-bg-2); padding: var(--space-4) var(--space-8); border-radius: var(--radius-sm); }
+
+.meal-nutrition { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-8); margin-bottom: var(--space-16); text-align: center; }
+
+.nutrition-item { font-size: var(--font-size-sm); }
+
+.nutrition-value { font-weight: var(--font-weight-semibold); color: var(--color-primary); }
+
+.nutrition-label { color: var(--color-text-secondary); }
+
+.meal-ingredients { font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-16); }
+
+.progress-dashboard { display: flex; flex-direction: column; gap: var(--space-32); }
+
+.progress-charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: var(--space-24); }
+
+.metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-20); }
+
+.metric { display: flex; flex-direction: column; align-items: center; text-align: center; padding: var(--space-16); background: var(--color-bg-1); border-radius: var(--radius-base); }
+
+.metric-label { font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-8); }
+
+.metric-value { font-size: var(--font-size-2xl); font-weight: var(--font-weight-bold); color: var(--color-primary); }
+
+.coach-status { display: flex; align-items: center; gap: var(--space-8); font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+
+.status-indicator { width: 8px; height: 8px; border-radius: 50%; background: var(--color-success); }
+
+.status-indicator.online { background: var(--color-success); animation: 2s ease 0s infinite normal none running pulse; }
+
+.chat-container { max-width: 800px; margin: 0px auto; }
+
+.chat-messages { max-height: 400px; overflow-y: auto; padding: var(--space-16); background: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-card-border); margin-bottom: var(--space-24); }
+
+.message { display: flex; gap: var(--space-12); margin-bottom: var(--space-16); }
+
+.message.user-message { flex-direction: row-reverse; }
+
+.message-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--color-bg-1); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+
+.user-message .message-avatar { background: var(--color-primary); color: var(--color-btn-primary-text); }
+
+.message-content { background: var(--color-bg-1); padding: var(--space-12) var(--space-16); border-radius: var(--radius-lg); max-width: 70%; }
+
+.user-message .message-content { background: var(--color-primary); color: var(--color-btn-primary-text); }
+
+.message-content p { margin: 0px; font-size: var(--font-size-base); }
+
+.quick-actions { display: flex; flex-wrap: wrap; gap: var(--space-8); margin-bottom: var(--space-24); justify-content: center; }
+
+.quick-action-btn { background: var(--color-bg-5); border: none; padding: var(--space-8) var(--space-16); border-radius: var(--radius-full); font-size: var(--font-size-sm); cursor: pointer; transition: all var(--duration-fast) var(--ease-standard); }
+
+.quick-action-btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+.chat-input { display: flex; gap: var(--space-12); }
+
+.chat-input input { flex: 1 1 0%; }
+
+.bottom-nav { position: fixed; bottom: 0px; left: 0px; right: 0px; background: var(--color-surface); border-top: 1px solid var(--color-card-border); display: flex; padding: var(--space-8) 0; z-index: 100; }
+
+.nav-item { flex: 1 1 0%; display: flex; flex-direction: column; align-items: center; gap: var(--space-4); background: none; border: none; padding: var(--space-8); cursor: pointer; transition: all var(--duration-fast) var(--ease-standard); color: var(--color-text-secondary); }
+
+.nav-item.active { color: var(--color-primary); }
+
+.nav-item:hover { background: var(--color-bg-1); }
+
+.nav-icon { font-size: 1.5rem; }
+
+.nav-label { font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); }
+
+.settings-section { margin-bottom: var(--space-24); }
+
+.settings-section h4 { margin: 0 0 var(--space-16) 0; font-size: var(--font-size-xl); color: var(--color-text); }
+
+.settings-actions { display: flex; flex-direction: column; gap: var(--space-12); }
+
+#progressEnergy { width: 100%; margin-bottom: var(--space-8); }
+
+#energyValue { font-weight: var(--font-weight-semibold); color: var(--color-primary); }
+
+@keyframes fadeIn { 
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes pulse { 
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@media (max-width: 768px) {
+  .dashboard-content { grid-template-columns: 1fr; }
+  .workout-filters { flex-direction: column; }
+  .workout-filters select { min-width: auto; }
+  .nutrition-stats { grid-template-columns: 1fr; }
+  .progress-charts { grid-template-columns: 1fr; }
+  .timer-controls { flex-direction: column; align-items: center; }
+  .timer-controls .btn { min-width: 120px; }
+  .modal-content { margin: var(--space-8); max-height: calc(-32px + 100vh); }
+  .goal-options, .level-options, .equipment-options { grid-template-columns: 1fr; }
+  .measurements-grid { grid-template-columns: repeat(2, 1fr); }
+  .onboarding-actions { flex-direction: column; gap: var(--space-12); }
+  .header-content { flex-direction: column; gap: var(--space-12); }
+  .section-header { flex-direction: column; align-items: flex-start; gap: var(--space-16); }
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .stats-row { grid-template-columns: 1fr; }
+  .measurements-grid { grid-template-columns: 1fr; }
+  .quick-actions { justify-content: flex-start; }
+  .quick-action-btn { font-size: var(--font-size-xs); padding: var(--space-6) var(--space-12); }
+}
+------MultipartBoundary--lEsZoNZak57Tz3Y0vz1S4Zw5tIutTdiPpjFVNTBBpT------
