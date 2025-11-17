@@ -63,7 +63,8 @@ AI Fitness Coach merges these proven approaches into a cohesive application, off
 - `components.json` — Component data configuration.
 
 ---
-###Application: [Open Application](https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/660d6433357552359deb608996e13ea1/55dd4a14-2e67-4596-9709-c595c8c8ab5e/index.html?utm_source=perplexity)
+
+### Application: [Open Application](https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/660d6433357552359deb608996e13ea1/55dd4a14-2e67-4596-9709-c595c8c8ab5e/index.html?utm_source=perplexity)
 
 ## 📊 RESULT ANALYSIS AND VALIDATION
 
